@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>ATOMIC HABITS</title>
+</head>
+<style>
+  body {
+  background-color: #95B9C7;
+  }
+  #CarouselExampleSlidesOnly {
+  height: 400px;
+  width: 600px;
+  margin: auto;
+  }
+  .carousel-item {
+  width: 100%;
+  height: 100%;
+  }
+  carousel-inner img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  }
+  @media (max-width:1068px) {
+  #CarouselExampleSlidesOnly {
+  height: 300px;
+  }
+  h2 {
+  font-family: Courier New;
+  }
+  h5 {
+  font-family: Georgia;
+  }
+  p {
+  font-family: sans-serif;
+  }
+</style>
+<body>
+<div class="container my-5">
+  <h2 class="text-center mb-4">ATOMIC HABITS BOOK REVIEW</h2>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg11I-KAiXLYTnhz_Wc_KU-1D4lySZ0M1D4udWEDaRWe4-mPp9vrHO3ZgMAlhkTfFrOtmcdjJzol8o9sJPhyCZi6Z1hEKlTL72tNuZn2M6U2biw715hffJJGKSsiFkSRe0giEeWoU-y_K87Exv2_FI6tcfBUyC7qSmDEHwUyUWUtKCk1BJ7xmtfk0IErv6A/s850/atomic-habits-original-imah3ucqaqvavnee.webp" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_Lt1z_M-QbgjUICRH_-khIhqJ_FHkxUbxS9RbXWZfL2kfY4MUzF42mLUdR7sVRQzZWX0XbC53IgTi5hRLOeeqedou_KdHBvc_2rC1Bukfp-Wwk1MqAIz9Lg8Zfm0WXqsyeLz3hJmHcBZja7C0dc0CHVjSrV4uGOGrHQSxTeA4HDoCpfytY9hQlIkyU_ZV/s1406/Atomic-Habits-Book-summary.webp" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbBDeQh_kqOxEsoz1DwZOUhaeqoNWTZVlP3Kb5n4Lg0hdKX87VyXT3ZHGl-wkc-30-JG1wK6lwq3kmHLBGxI5eDspZiwg9IMXeYMkbq3YoNrqimhPQ3Id2XZo-Pby776MIlTFfo-niaO5fJHaq3-6GZsu0aGi6Icq98ilrDUF-Q-5Erh3Np4Fai14o9o5b/s940/PX-Blog-Images-86.png" alt="Third slide">
+    </div>
+  </div>
+  </div>
+</div>
+<div class="grid gap-4">
+  <h5 class="text-center">Atomic Habits</h5>
+  <p class="lead text-center">$50.00</p>
+  <p>"Atomic Habits": An Easy & Proven Way to Build Good Habits & Break Bad Ones" by James Clear is a best-selling self-improvement book that provides a comprehensive framework for forming positive habits, eliminating negative ones, and understanding how small, consistent changes can lead to remarkable long-term results.Clear emphasizes the power of tiny, incremental improvements--or "atomic habits" --and how they compound over time to create significant outcomes.</p>
+  <button class="btn btn-primary">Add to cart</button>
+  <a href="{{ url_for('payment') }}" class="btn btn-primary">Buy Now</a>
+  <p>Free Delivery</p>
+</div>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://stackpath.bootstrapcdn.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popper/npm/popperjs/core/@3.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

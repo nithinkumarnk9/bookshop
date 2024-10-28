@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewpoints" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Products</title>
+</head>
+<style>
+  body {
+  background-color:#99A3A3;
+  }
+  h5 {
+  color: black;
+  font-family: Times New Roman;
+  }
+  h2 {
+  font-family: Courier New;
+  }
+  .custom-shadow {
+  box-shadow: 0, 4px, 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+  transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .custom-shadow:hover {
+  transform: scale(1.05);
+  box-shadow: 0, 8px, 16px rgba(0,0,0,0.2), 0, 12px, 40px rgba(0,0,0,0.15);
+  }
+</style>
+<body>
+<h2 class="text-center">Products</h2>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card custom-shadow">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_M_EYSH7nlTGg34lNMUcm3Rt3GQtLbqhwhYLuVdyuIl63BK73jVD_369999Tf0yTSY6S1pvhwSJCuBZshtwCoSzk8nGIifD6JsjhlG2v47jEgV3V1_51CKL5ARCJ0EF8LS4AiKks02anLKrHnu68QjqPSY0DdxtWqM8Hx2oEDNbpDgWsp5P1TdMYWvJYT/s639/10BooksServiecDesign_10.jpg" class="card-img-top" alt="Product">
+        <div class="card-body">
+          <h5 class="card-title">Good to Great</h5>
+          <p class="card-text">$25.00</p>
+          <a href="{{ url_for('product1') }}" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card custom-shadow">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1RYPNVRL8bXY-mjhVnQCyjTTtHz7NmzuOhkWUYXXL0MBTkkzGXxJhNqrhGhO6jCDztlq59R-lSqN02krGNt332WaBDeq4WtdeULNdNnPWfiE1-xGFV6nPS7wd9j78alAf1GEXQCnvfuKR2sqtQY6SdJOWHMKRhSUR-ooOd_rdNw_VVVUBneh_81y6AYq9/s845/Hooked_cover_shadow_tilt.webp" class="card-img-top" alt="product">
+        <div class="card-body">
+          <h5 class="card-title">Hooked</h5>
+          <p class="card-text">$35.00</p>
+          <a href="{{ url_for('product2') }}" class="btn btn-primary">View details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card custom-shadow">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP2MQvOouL7Jv5LMAM9EQJ-HtUiW8_DXiKzD2cVm0mWIxLpral-6a58GAOPv8Edb9JZZrLk3PoWuMS3Qi-a50xbhSES83h5d1yydny9MsA-m3ueoUbIYhX7oT9YpaU7Z20OpucQzl7BPAbQiYWQBidqdfsxW5zUyvsrHAiLzya5kqi6EwXiM4ocbDkgtL-/s2048/sprint-book-001-1-2048x1152.jpeg" class="card-img-top" alt="Product">
+        <div class="card-body">
+          <h5 class="card-title">Sprint</h5>
+          <p class="card-text">$20.00</p>
+          <a href="{{ url_for('product3') }}" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card custom-shadow">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHdg6WfUtPU31CatXmLUpLOrQAVemDFyJWzE3Kyljlz2ySgKdNZa0RBUutVExBOhrjJ-bkFI1Igj2KH_mbnJvJSwTdVN_8Z76n3pB9kkWuAwU5n4b7cVGP9ZlLg2MJSRX7S7vjjRhd4vS-JCGG9zC8RwYbiS-csWrvDoOGh7tgmJg0G3ThYq_OIgTgjWn8/s425/1713941621_9789354899775.jpg" class="card-img-top" alt="Product">
+        <div class="card-body">
+          <h5 class="card-title">The 80/20 Principal</h5>
+        <p class="card-text">$10.00</p>
+          <a href="{{ url_for('product4') }}" class="btn btn-primary">View details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card custom-shadow">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVlWPjV6yX485qBCUqxd21nwXuPH5J5GGbAO___fKbFP-w2paCZ4uaziuIGkQzLNy8BsRHQssnHPxbIMrvhlRpOLieqmZbMaqL2iUkNpZ-JMK-15PHXYorj6N5J4CJtUBWwE20HQTQ9lbUanwHuec23kYntOAuGWOIqcwlSj9um7VOD6xdCQGFy_7ATLQj/s500/Continuous-Discovery-Habits--Discover-products-that-create-Customer-Value-and-Business-Value---by-Teresa-Torres.png" class="card-img-top" alt="Product">
+        <div class="card-body">
+          <h5 class="card-title">Continuous Discovery Habits</h5>
+          <p class="card-text">$15.00</p>
+          <a href="{{ url_for('product5') }}" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card custom-shadow">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJVWINis6H1QC-2pa56MBkJp47oDAriFoz6Cb9awA8aN60_lMtW6yCYxG9wZHW5T3j_o1ADcbMIgfupKLFuVLeKNb-qi6LOHeGPLLXTfa-P2Gyn0PChyIDggnN5EOjRq7jR0MrAuaaKmToPxJf1rsq-rbiELPfw980hH42_pL0d3zjUqaTranGgaKxR9DN/s1000/81BE7eeKzAL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="Product">
+        <div class="card-body">
+          <h5 class="card-title">Rich Dad Poor Dad</h5>
+        <p class="card-text">$30.00</p>
+          <a href="{{ url_for('product6') }}" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card custom-shadow">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizmr8J37-BOwMd4fGRgtL94EaxdaOmF1IFUCtBC_ndXh4mWu1OAticeVsO-LiSIdrOWZlzuIhpkFHQ3rcODIv0H-GWeF8ra05SGPUIEBo2mML68FTqMPVqOGWRyHhNPoKQoiLSYRLrV_Kx32ZHqwHU7JBuAOniyN7TIO1jgdHcTLBAQdY_06NbWtUclNUz/s1000/81ND4ZcIsxL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="Product">
+        <div class="card-body">
+          <h5 class="card-title">The Power of Thinking</h5>
+          <p class="card-text">$45.00</p>
+          <a href="{{ url_for('product7') }}" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card custom-shadow">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcNScsxIOyZqSGQRxKfXF7u_pgQGbPfopSQjMDaVlRnudGmuSa0TzP6pSsQlCBWUp8ZQzWDjYQGhs6ZXptwFHb5qBUVUFeBU6NGn0k41lcmcyMTixgJWMpHFRlwrULo5AgN_TBQwO3chqtUMF6V4dyX2K1Goz-_VKJIlXMBxmzf1b2ON8WlMrtJrvo1eCv/s225/images%20%2814%29.jpeg" class="card-img-top" alt="Product">
+        <div class="card-body">
+          <h5 class="card-title">Dopamine Detox</h5>
+          <p class="card-text">$20.00</p>
+          <a href="{{ url_for('product8') }}" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card custom-shadow">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdwNMwAvD_dVZUAMZoH9NraPRjZTvn1qUJqp8T5JsHAf65UymtQU7hxoMp7XppD6-ipfVlmrig1LvzhbRYGzsbSk3SESXQkcKUjLwnXYpRSrtK9cK4aF8CAJpLGlFhHxjoTrzaY0vy_di2vGxf2xYw-PVqT_-gE9slKmdzLSyZEAllcatYAEskXAsVvhSQ/s880/atomic-habits-full.png" class="card-img-top" alt="Product">
+        <div class="card-body">
+          <h5 class="card-title">Atomic Habits</h5>
+          <p class="card-text">$50.00</p>
+          <a href="{{ url_for('product9') }}" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card custom-shadow">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOl14Im75HMwWTpzfEcKHkuuMi55cdy-pXt4X5hp6-AGjcTrdEKwohBtIK34mGtWwQ_Weq5YzRnS_ZM5LXG4dlYDfl-vgJygu8FHbVrAwOWbdgEafXHSfd0ueNr0eNBHIuUaURGbQR2y5cVKop-_0tGpZd1wu07SPlKIA685BjZGXuR_LWax5fPbIjFFHQ/s512/xzjev_512.webp" class="card-img-top" alt="Product">
+        <div class="card-body">
+          <h5 class="card-title">Do it Today</h5>
+          <p class="card-text">$45.00</p>
+          <a href="{{ url_for('product10') }}" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@pooperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

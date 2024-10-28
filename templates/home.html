@@ -2,9 +2,242 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title> Ecommerce Website</title>
 </head>
+<style>
+    .product-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    }
+    .product-card img {
+    transition: transform 0.5s ease;
+    }
+    .product-card:hover img {
+    transition: scale(1.1);
+    }
+    .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:  100%;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    }
+    .product-card:hover .overlay {
+    opacity: 1;
+    }
+    /* View More button styling */
+    .view-more-btn {
+    border: 2px solid #fff;
+    padding-left:800px;
+    color: #000000;
+    text-transform: uppercase;
+    transition: background-color 0.3s color 0.3s;
+    }
+    .view-more-btn:hover {
+    background-color: #fff;
+    color: #000;
+    }
+    .inline-block {
+    inline-block: center;
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    background-color: #e0e0e0;
+    padding-left: 30px;
+    margin: 5px;
+    }
+    .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit:cover;
+    }
+    .custom-shadow {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+    transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .custom-shadow:hover {
+    transform: scale(1.05);
+    box-shadow: 0, 8px, 16px rgba(0,0,0,0.2), 0, 12px 40px rgba(0,0,0,0.15);
+    }
+    .newsletter-card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .newsletter-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    h1 {
+    font-family: Verdana;
+    }
+    h2 {
+    font-family: monospace;
+    }
+    h5 {
+    font-family: Geneva;
+    }
+    p {
+    font-family: sans-serif;
+    }
+</style>
 <body>
-<h1>Welcome to front end developer</h1>
+<header class="bg-dark text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h1>BOOKSHOP</h1>
+        <nav>
+            <a href="index.html" class="text-white px-2">Home</a>
+        </nav>
+    </div>
+</header>
+ <div class="container my-5">
+    <h2 class="text-center mb-4">Bookshop Slider</h2>
+
+   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_M_EYSH7nlTGg34lNMUcm3Rt3GQtLbqhwhYLuVdyuIl63BK73jVD_369999Tf0yTSY6S1pvhwSJCuBZshtwCoSzk8nGIifD6JsjhlG2v47jEgV3V1_51CKL5ARCJ0EF8LS4AiKks02anLKrHnu68QjqPSY0DdxtWqM8Hx2oEDNbpDgWsp5P1TdMYWvJYT/s639/10BooksServiecDesign_10.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1RYPNVRL8bXY-mjhVnQCyjTTtHz7NmzuOhkWUYXXL0MBTkkzGXxJhNqrhGhO6jCDztlq59R-lSqN02krGNt332WaBDeq4WtdeULNdNnPWfiE1-xGFV6nPS7wd9j78alAf1GEXQCnvfuKR2sqtQY6SdJOWHMKRhSUR-ooOd_rdNw_VVVUBneh_81y6AYq9/s845/Hooked_cover_shadow_tilt.webp" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP2MQvOouL7Jv5LMAM9EQJ-HtUiW8_DXiKzD2cVm0mWIxLpral-6a58GAOPv8Edb9JZZrLk3PoWuMS3Qi-a50xbhSES83h5d1yydny9MsA-m3ueoUbIYhX7oT9YpaU7Z20OpucQzl7BPAbQiYWQBidqdfsxW5zUyvsrHAiLzya5kqi6EwXiM4ocbDkgtL-/s2048/sprint-book-001-1-2048x1152.jpeg" alt="Third slide">
+    </div>
+  </div>
+   </div>
+ </div>
+<div class="container my-5">
+    <h2 class="text-center mb-4">Gallery</h2>
+    <div class="row g-4">
+      <!-- Product Card 1 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHdg6WfUtPU31CatXmLUpLOrQAVemDFyJWzE3Kyljlz2ySgKdNZa0RBUutVExBOhrjJ-bkFI1Igj2KH_mbnJvJSwTdVN_8Z76n3pB9kkWuAwU5n4b7cVGP9ZlLg2MJSRX7S7vjjRhd4vS-JCGG9zC8RwYbiS-csWrvDoOGh7tgmJg0G3ThYq_OIgTgjWn8/s425/1713941621_9789354899775.jpg" class="img-fluid" alt="Product 1">
+          <div class="overlay">
+            <h5>THE 80/20 PRINCIPAL</h5>
+            <p>$10.00</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVlWPjV6yX485qBCUqxd21nwXuPH5J5GGbAO___fKbFP-w2paCZ4uaziuIGkQzLNy8BsRHQssnHPxbIMrvhlRpOLieqmZbMaqL2iUkNpZ-JMK-15PHXYorj6N5J4CJtUBWwE20HQTQ9lbUanwHuec23kYntOAuGWOIqcwlSj9um7VOD6xdCQGFy_7ATLQj/s500/Continuous-Discovery-Habits--Discover-products-that-create-Customer-Value-and-Business-Value---by-Teresa-Torres.png" class="img-fluid" alt="Product 2">
+          <div class="overlay">
+            <h5>CONTINUOUS DISCOVERY HABITS</h5>
+            <p>$15.00</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgc_h-MOWgMFDazEyoOlxSuCJq1rrh2C4_zAapHgQRFKY5DV8ufxe4i3iFrd_FE5UMwBZN1tLgMpq2gEJcB8W9DgpU8ah1-b29FNMXYNiLEmNn2U1g94FL7C67TQzRlnUW7fZcl5fXBPt-O_c2Dc1v2WkV6a5SGmLajdD8TSxeO8KEw5xl9a90er8h5rRUQ/s2048/sprint-book-001-1-2048x1152.jpeg" class="img-fluid" alt="Product 3">
+          <div class="overlay">
+            <h5>SPRINT</h5>
+            <p>$20.00</p>
+          </div>
+        </div>
+      </div>
+        <a href="{{ url_for('products') }}" class="btn btn-dark text-center">View More</a>
+    </div>
+  </div>
+<div class="container-fluid bg-secondary text-white p-5 mb-4">
+    <h2 class="display-4">About us</h2>
+    <p class="lead">Reading a books is a powerful habit that benefits both your mind and soul. It nurtures lifelong learning, fosters empathy, and offers an effective way to unwind. Whether you need for personal growth, entertainment, or relaxation, making books a part of your routine is an investment in yourself. </p>
+    <div class="container my-5">
+        <div class="col-md-8 text-center">
+            <h2 class="row justify-content-center"></h2>
+        </div>
+    </div>
+</div>
+<div class="d-flex justify-content-center align-items-center">
+<div class="inline-block custom-shadow bg-primary text-white">
+       <h3>Order Now</h3>
+        <p>Share some details here.This is flexible section where you can share anything you want.</p>
+    </div>
+    <div class="inline-block custom-shadow">
+        <h3>Free Shipping </h3>
+        <p>Share some details here.This is flexible section where you can share anything you want.</p>
+    </div>
+<div class="inline-block custom-shadow bg-success text-white">
+    <h3>More Freshness</h3>
+    <p>Share some details here. This is flexible section where you can share anything you want.</p>
+</div>
+<div class="inline-block custom-shadow bg-info">
+    <h3>Safe Payment</h3>
+    <p>Share some details here. This is flexible section where you can share anything you want.</p>
+</div>
+</div>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Customer Reviews</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 custom-shadow bg-dark text-white">
+          <div class="card-body">
+            <h5 class="card-title">Alice</h5>
+            <p class="card-text">"Quick delivery, and the quality exceeded expectations!"</p>
+            <p class="text-warning">★★★★☆</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 custom-shadow bg-secondary text-white">
+          <div class="card-body">
+            <h5 class="card-title">David</h5>
+            <p class="card-text">"Reliable and professional service. Will return!"</p>
+            <p class="text-warning">★★★★★</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 custom-shadow bg-danger text-white">
+          <div class="card-body">
+            <h5 class="card-title">Sophia</h5>
+            <p class="card-text">"Affordable pricing and great support."</p>
+            <p class="text-warning">★★★★☆</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="container mt-5">
+          <div class="row justify-content-center">
+              <div class="col-md-6">
+                  <div class="card newsletter-card bg-light text-dark p-4">
+                      <h2 class="text-center mb-3">Subscribe to Our Newsletter</h2>
+                      <p class="text-center mb-4">Get the latest news, updates, and offers directly in your inbox </p>
+<form>
+    <div class="mb-3">
+        <label for="emailInput" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="emailInput" placeholder="Enter your email" required>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+</form>
+      </div>
+                  <div class="container mt-5">
+                  <footer class="bg-dark text-light text-center py-3">
+                      <p class="mb-0">&copy; 2024 Bookshop. All Rights Reversed.</p>
+                  </footer>
+                  </div>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

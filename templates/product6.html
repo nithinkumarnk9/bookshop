@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>RICH DAD POOR DAD</title>
+</head>
+<style>
+  body {
+  background-color: #95B9C7;
+  }
+  #carouselExampleSlidesOnly {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  }
+  .carousel-item {
+  width: 100%;
+  height: 100%;
+  }
+  .Carousel-inner img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  }
+  @media(max-width:1068px) {
+  #CarouselExampleSlidesOnly {
+  height: 300px;
+  }
+  }
+  h2 {
+  font-family: courier new;
+  }
+  h5 {
+  font-family: Georgia;
+  }
+  p {
+  font-family: sans-serif;
+  }
+</style>
+<body>
+<div class="container my-5">
+  <h2 class="text-center mb-4">RICH DAD POOR DAD BOOK REVIEW</h2>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy2_BuaQisChlxabn_ikejI-_34e_4RSb4GbgaC450qE2NOqOndv3jBQtYv1pe1r2PwpWGGPMXkKSw_THm6LR393CSlKWcL-jUdAaiMNvt_zKLiaZdWzP1xcPpmVpbYJd50pd44bgBXfKucWJNre1sRcJS04LcJ88oB2vGjxxuZFMySfAC8YS0mJXy20eA/s1066/1696152490734.jpeg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0x6SwPjiNiQs0at6gFOx9q_P1aRxXQjDdxXWq-LjrDidB0U0AN0h3tzZ6yCOG9tclXM5g_qZ7GxeEwKohhYtOAAejPsB_OQ5bwJ5kvNAmr2tP4BffeH5kJzRNrgeMpGvdc29Ghsga7iUn9Zm9YnWSqCLp4KBL461jECmsqZaE_tPWqllMqFbGb6Zh8Mhu/s1000/81BE7eeKzAL._AC_UF1000,1000_QL80_.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0x6SwPjiNiQs0at6gFOx9q_P1aRxXQjDdxXWq-LjrDidB0U0AN0h3tzZ6yCOG9tclXM5g_qZ7GxeEwKohhYtOAAejPsB_OQ5bwJ5kvNAmr2tP4BffeH5kJzRNrgeMpGvdc29Ghsga7iUn9Zm9YnWSqCLp4KBL461jECmsqZaE_tPWqllMqFbGb6Zh8Mhu/s1000/81BE7eeKzAL._AC_UF1000,1000_QL80_.jpg" alt="Third slide">
+    </div>
+  </div>
+  </div>
+</div>
+<div class="grid gap-4">
+  <h2 class="text-center">Rich Dad Poor Dad</h2>
+  <p class="lead text-center">$30.00</p>
+  <p>Rich Dad Poor Dad: "Rich Dad Poor Dad" is a best-selling personal finance book by Robert T. Kiyosaki, first published in 1997. It offers lessons on wealth-building, financial literacy, and the importance of shifting one's mindset about money. The book contrasts two perspectives on finaces--those of the author's "rich dad"(a friend's father who was a savvy investor) and "poor dad" (his biological father, a highly educated man with traditional beliefs about work and education). These two figures embody different approaches to wealth and career.</p>
+  <button class="btn btn-primary">Add to Cart</button>
+  <a href="{{ url_for('payment') }}" class="btn btn-primary">Buy Now</a>
+  <p>Free Delivery</p>
+</div>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://stackpath.bootstrapcdn.com/jquery-3.5.1.slim.min.css"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popper/npm/@popperjs/core/2.5.2/dist/umd/popper.min.css"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

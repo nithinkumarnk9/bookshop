@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>HOOKED</title>
+</head>
+<style>
+  body {
+  background-color: #95B9C7;
+  }
+  #carouselExampleControls {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  }
+  .carousel-item {
+  width: 100%;
+  height: 100%;
+  }
+  .carousel-inner img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  }
+  @media (max-width:1068px) {
+  #carouselExampleControls {
+  height: 300px;
+  }
+  }
+  h2 {
+  font-family: courier New;
+  }
+  h5 {
+  font-family: Georgia;
+  }
+p {
+  font-family: sans-serif;
+  }
+</style>
+<body>
+<div class="container my-5">
+  <h2 class="text-center mb-4">HOOKED</h2>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrrQtoruKxks1VGTLw8DMtcU2ZcF-ImkZA53L-eZY5VewELZgI8O-Y0KqfTnCMAcaZbU9LyFclGpYtTxLOi686OFMVhcuHvr_eKSiejoaCaLJDW-fYfJCzCvxiIIXtIoylZeImffwbZmP4IW8OxXuqCHYNNfsMRPMFRLNtonOUwNXBAtXz0WKg-h6V-8zj/s1920/good-to-great-framework-infographic.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinWseMC78tCRcce4eBnpLeqYxYDAeiCtRxdW_pV3QcMlsDPC5jECZvpdDflJBucGCGJE6BbS6m1fMGspRyjWy3ZGzrJxJ6mnMQoK8Nqe34i3OUvhQb4nAF3TrKkOAvxGCDk9yf2V7aj0EXvrrjS2qJ84BC_giW4orjPKM7dEbHJB7g9UKzTPyMjr30gCPZ/s1280/hooked-by-nir-eyal-book-summary.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYP-W6b3r1CVx-xBEOFfNFS-YP44BcxLArn1q7nqZVaXelBFypKlSZItpTKWvoy88_-3_Z_EDCX5nAW4TbVcA3uVuly6cg_EZuM57EGLUannasbFxcpGPhtibAV9gggj4sGyAqbbw2jz6IJYDJ9PmKOwdArg14JHwlUQ_0ctKlmIP5doOP-veWo99Pk3vx/s800/good-to-great-book-summary.jpg" alt="Third slide">
+    </div>
+  </div>
+</div>
+</div>
+<div class="grid gap">
+  <h2 class="text-center">Hooked</h2>
+  <p class="lead text-center">$35.00</p>
+  <p>Hooked: Hooked is a practical guide for entrepreneurs, product designers, and marketers looking to understand how to build products that capture users' attention and foster long-term engagement. Nir Eyal introduces the Hook Model, a four-step process that companies use to create habit-forming product. The book provides real-world examples from companies like Facebook, Instagram, and Pinterest, explaining how these products leverage psychology to become an integral part of users lives. Eyal also discusses the ethical responsibilities of creating habit-forming products and how they can be used for good.</p>
+  <button class="btn btn-success">Add to cart</button>
+  <a href="{{ url_for('payment') }}" class="btn btn-success">Buy Now</a>
+  <p>Free Delivery</p>
+</div>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://stackpath.bootstrapcdn.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
